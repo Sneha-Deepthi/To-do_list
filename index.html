@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header><h1>Get It Done</h1></header>
+    <div class="main">
+        <div class="main-container">
+            <div id="Add">
+                <input id="TaskName" type="text" placeholder="Enter the task name">
+                <div id="prio">
+                    <label>Priority of the task</label>
+                    <select id="Priority">
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                </div>
+                <button onclick="addTask()">Add</button>
+            </div>
+            <p class="count">Completed: 0/0</p>
+            <ul id="Tasklist"></ul>
+            <div class="pagination">
+                <button onclick="prevPage()">Prev</button>
+                <span id="pageIndicator"></span>
+                <button onclick="nextPage()">Next</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
